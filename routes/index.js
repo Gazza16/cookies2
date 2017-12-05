@@ -3,11 +3,11 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'S' });
+  res.render('index', { title: 'home' });
 });
 
 router.get('/auth', function(req, res, next) {
-  res.render('index', { title: 'Successfuly logged in!!' });
+  res.render('login', { title: 'Successfuly logged in!!' });
 });
 
 module.exports = router;
